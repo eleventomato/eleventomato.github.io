@@ -9,7 +9,7 @@
     
     <title>
         
-            Archive: 2022/1 |
+            TF-IDF原理及Python实现 |
         
         ElevenTomato&#39;s Blog
     </title>
@@ -69,7 +69,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/archives"
                             >
                                 ARCHIVES
@@ -111,7 +111,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/archives">ARCHIVES</a>
                 </li>
             
@@ -136,43 +136,135 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="archive-container ">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">TF-IDF原理及Python实现</span>
+        </div>
+
         
-<div class="archive-list-container">
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/presion.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">ElevenTomato</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-01-03 10:28:41</span>
+        <span class="mobile">2022-01-03 10:28</span>
+    </span>
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2022</span>
-                <span class="archive-year-post-count">[3]</span>
-            </div>
-            <ul class="article-list">
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
                 
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/TF-IDF%E5%8E%9F%E7%90%86%E5%8F%8APython%E5%AE%9E%E7%8E%B0/"
-                        >TF-IDF原理及Python实现</a>
-                        <span class="article-date">01-03</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/Linux/"
-                        >Linux</a>
-                        <span class="article-date">01-02</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/python%E5%AD%A6%E4%B9%A0/"
-                        >python学习</a>
-                        <span class="article-date">01-02</span>
+                    <li>
+                        <a href="/tags/NLP/">NLP</a>&nbsp;
                     </li>
                 
             </ul>
-        </section>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
 
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>TF-IDF是一种信息检索与数据挖掘常用的加权技术。TF是词频，IDF是逆文本频率指数。<br>原理：<br>如果某个词或短语在一篇文章中出现的频率TF高，并且在其他文章中很少出现，则认为这个词或者短语具有很好的类别区分能力。<br>TF-IDF实际上是TF * IDF。TF是词频，IDF逆向文件频率。<br>TF：词条在所在文档出现的频率。tf = n/N。n为该单词出现的次数，N为该文章所有的单词数。<br>例如文章essay为”Tom likes eating hamburger,Jam likes eating banana”,likes的TF则为2/8 = 0.25<br>逆向文件频率IDF：如果包含词条的文档越少，IDF越大。<br>idf = log(D/d) D为所有的文件总数，d为包含该词的文件数目。<br>例如有三个文章：<br>essay1:“张老师喜欢喝茶”<br>essay2:“李老师喜欢钓鱼”<br>essay3:”王老师喜欢听歌“<br>则”喜欢“一词的IDF为log(3/3)=0,”钓鱼“一次的IDF为log(3/1)=log(3)=0.47712</p>
+<h1 id="python-实现TF-IDF"><a href="#python-实现TF-IDF" class="headerlink" title="python 实现TF-IDF"></a>python 实现TF-IDF</h1>
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：TF-IDF原理及Python实现</li>
+        <li>Post author：ElevenTomato</li>
+        <li>Create time：2022-01-03 10:28:41</li>
+        <li>
+            Post link：http://example.com/TF-IDF原理及Python实现/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/NLP/">#NLP</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/Linux/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Linux</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+            <div class="comment-container">
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;Comments</i>
+    </div>
+    
+
+        
+            
+
+
+        
+    
+</div>
+
+            </div>
+        
     </div>
 </div>
 
@@ -220,6 +312,27 @@
     </div>
 
     
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
 
     <div class="right-bottom-side-tools">
         <div class="side-tools-container">
@@ -266,6 +379,14 @@
     </div>
 
     
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#python-%E5%AE%9E%E7%8E%B0TF-IDF"><span class="nav-number">2.</span> <span class="nav-text">python 实现TF-IDF</span></a></li></ol>
+    </div>
+</div>
+        </aside>
+    
 
     <div class="image-viewer-container">
     <img src="">
@@ -308,7 +429,6 @@
 
 
 
-
 <script src="/js/utils.js"></script>
 
 <script src="/js/main.js"></script>
@@ -335,6 +455,14 @@
 
 
 <div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
     
 </div>
 
